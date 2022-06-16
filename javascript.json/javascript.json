@@ -1,0 +1,30 @@
+{
+	"QUnit Module": {
+		"prefix": ["qum", "qunit-module"],
+		"body": [
+			"import {",
+			"    ",
+			"} from './${1:file}.js';",
+			"",
+			"const test = QUnit.test;",
+			"",
+			"QUnit.module('${1:module}');",
+			"",
+			"$0"
+		],
+		"description": "Vanilla JS component creator"
+	},
+	
+	"QUnit Test": {
+		"prefix": ["qut", "qunit-test"],
+		"body": [
+			"test('${1:test name}', (expect) => {",
+			"    // Arrange, Act, Assert",
+			"    $0",
+			"});"
+		],
+		"description": "Vanilla JS component creator"
+	}
+
+	
+}
